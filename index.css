@@ -1,0 +1,116 @@
+@-webkit-keyframes swipe {
+  0% {
+    left: 25%;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+    opacity: 0;
+  }
+  25% {
+    left: 25%;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+    opacity: 1;
+  }
+  75% {
+    left: 75%;
+    -webkit-transform: translateX(-75%);
+            transform: translateX(-75%);
+    opacity: 1;
+  }
+  100% {
+    left: 75%;
+    -webkit-transform: translateX(-75%);
+            transform: translateX(-75%);
+    opacity: 0;
+  }
+}
+
+@keyframes swipe {
+  0% {
+    left: 25%;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+    opacity: 0;
+  }
+  25% {
+    left: 25%;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+    opacity: 1;
+  }
+  75% {
+    left: 75%;
+    -webkit-transform: translateX(-75%);
+            transform: translateX(-75%);
+    opacity: 1;
+  }
+  100% {
+    left: 75%;
+    -webkit-transform: translateX(-75%);
+            transform: translateX(-75%);
+    opacity: 0;
+  }
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("./font/BebasNeue-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  max-width: 320px;
+  min-height: 480px;
+  max-height: 480px;
+  height: 480px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.area {
+  width: 320px;
+  height: 480px;
+}
+
+body .text {
+  position: absolute;
+  top: 172px;
+  left: 24px;
+  margin: 0;
+  z-index: 1;
+  font-family: 'BebasNeue';
+  color: white;
+  font-size: 30px;
+  width: 260px;
+}
+
+body .logo {
+  z-index: 1;
+  position: absolute;
+  bottom: 20px;
+  right: 23px;
+  background-image: url(./images/mitsubishi.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 44px;
+  height: 49px;
+}
+
+body #app {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 320px;
+  height: 480px;
+}
+
+body #app canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=index.css.map */
